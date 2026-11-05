@@ -72,7 +72,7 @@ java -cp src TesFitTrack
 
 ## Contoh Output
 
-(Output.png)
+![Screenshot Hasil Eksekusi Program](Output.png)
 
 
 ## Nilai Default
