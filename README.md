@@ -70,6 +70,9 @@ java -cp src TesFitTrack
 
 ---
 
+## Contoh Output
+
+![Screenshot Hasil Eksekusi Program](output.png)
 
 
 ## Nilai Default
@@ -78,4 +81,14 @@ java -cp src TesFitTrack
 | :--- | :--- | :--- |
 | **Jenis Paket** | `"Basic"` | Jika instansiasi dilakukan tanpa menyertakan argumen jenis paket, sistem secara otomatis menetapkan paket sebagai **Basic**. |
 | **Data Gagal Validasi** | `null` / Nilai Lama | Jika data pada *constructor* tidak lolos validasi, atribut bernilai `null`. Jika gagal pada *setter*, atribut mempertahankan **nilai lama**. |
+
+## Batasan dan Pengembangan Lanjutan
+### Batasan Saat Ini
+* Data anggota masih disimpan di dalam memori utama (array/RAM) sehingga data hilang saat program dihentikan.
+* Belum tersedia antarmuka pengguna interaktif (CLI Scanner / GUI) untuk memasukkan data secara dinamis dari keyboard.
+
+### Rencana Pengembangan Lanjutan
+* Mengintegrasikan media penyimpanan permanen (database MySQL atau file JSON/CSV).
+* Menambahkan fitur penghitungan biaya keanggotaan berdasarkan jenis paket (Basic, Premium, VIP).
+* Menambahkan antarmuka interaktif CLI berbasis menu pilihan bagi pengguna.
 
