@@ -59,6 +59,7 @@ javac src/*.java
 
 Jalankan program:
 java -cp src TesFitTrack
+```
 
 ###  Melalui IntelliJ IDEA / VS Code
 
@@ -69,21 +70,12 @@ java -cp src TesFitTrack
 
 ---
 
-## Contoh Output
 
-```text
-=== 1. SKENARIO PEMBUATAN OBJEK & VALIDASI CONSTRUCTOR ===
-[Uji Coba Input Salah] Error Validasi: Nomor telepon harus diawali angka 0 dan minimal 10 digit!
-Error Validasi: Jenis paket hanya boleh 'Basic', 'Premium', atau 'VIP'!
 
-=== 2. SKENARIO PERUBAHAN DATA LEWAT SETTER (VALIDASI) ===
-Nomor Telepon Awal Budi: 085678901234
-Mencoba mengubah nomor telepon Budi dengan nilai tidak valid ('123')... Error Validasi: Nomor telepon harus diawali angka 0 dan minimal 10 digit!
-Nomor Telepon Budi Setelah Gagal Diubah: 085678901234
+## Nilai Default
 
-=== 3. CETAK DAFTAR MEMBER DENGAN PERULANGAN FOR & TOSTRING() ===
-Member ke-1: Member FitTrack [Nama: 'Andi Wijaya', No. Telepon: '081234567890', Tanggal Daftar: '10-10-2026', Jenis Paket: 'Premium']
-Member ke-2: Member FitTrack [Nama: 'Budi Santoso', No. Telepon: '085678901234', Tanggal Daftar: '12-10-2026', Jenis Paket: 'VIP']
-Member ke-3: Member FitTrack [Nama: 'Citra Dewi', No. Telepon: '089012345678', Tanggal Daftar: '14-10-2026', Jenis Paket: 'Basic']
-Member ke-4: Member FitTrack [Nama: 'Eko Prasetyo', No. Telepon: 'null', Tanggal Daftar: '15-10-2026', Jenis Paket: 'null']
-```
+| Atribut | Nilai Default | Keterangan |
+| :--- | :--- | :--- |
+| **Jenis Paket** | `"Basic"` | Jika instansiasi dilakukan tanpa menyertakan argumen jenis paket, sistem secara otomatis menetapkan paket sebagai **Basic**. |
+| **Data Gagal Validasi** | `null` / Nilai Lama | Jika data pada *constructor* tidak lolos validasi, atribut bernilai `null`. Jika gagal pada *setter*, atribut mempertahankan **nilai lama**. |
+
